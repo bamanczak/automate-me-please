@@ -31,8 +31,8 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Run a one-line script
+      - name: Linter
         run: npm run lint
 
-      - name: Run a one-line script
+      - name: Unit tests
         run: npm test -- --no-watch --no-progress --browsers=ChromeHeadless
