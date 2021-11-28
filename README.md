@@ -51,9 +51,9 @@ Kod testów e2e znajduje się w `/tests/pesel.spec.ts`
 - [x] Popraw testy `should accept valid PESEL` oraz `should reject invalid PESEL` aby testowały to, co powinny (prawidłowy i nieprawidłowy pesel oraz wyświetlane dane)
 
 ## Zadanie 3 - pokrycie unit testów
-- [ ] Uruchom testy jednostkowe z flagą `--code-coverage`, tj. wykonaj `npm test -- --code-coverage` 
-- [ ] Zweryfikuj raport html pokrycia kodu w pliku .coverage\pesel\index.html
-- [ ] Masz pomysł jak rozszerzyć pokrycie testów?
+- [x] Uruchom testy jednostkowe z flagą `--code-coverage`, tj. wykonaj `npm test -- --code-coverage` 
+- [x] Zweryfikuj raport html pokrycia kodu w pliku .coverage\pesel\index.html
+- [x] Masz pomysł jak rozszerzyć pokrycie testów?
 
 ## Zadanie 4 - Konfiguracja pipeline'u CI z wykorzystaniem GitHub Actions
 - [ ] W folderze `.github/workflows`, stwórz plik `main.yml`. Ew. wejdź w link `<adres-twojego-repo-na-github>/actions/new` i kliknij `set up a workflow yourself` aby otworzyć edytor online
@@ -97,16 +97,16 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 ~~~
-- [ ] Zrób `git commit` oraz `git push` - sprawdź czy Github Actions uruchomił Build
-- [ ] rozszerz konfigurację CI o linter
-- [ ] rozszerz konfigurację CI o testy jednostkowe
-- [ ] rozszerz konfigurację CI o budowanie aplikacji
-- [ ] rozszerz konfigurację CI o testy e2e, z pomocą komendy `npm run ci:e2e`
+- [x] Zrób `git commit` oraz `git push` - sprawdź czy Github Actions uruchomił Build
+- [x] rozszerz konfigurację CI o linter
+- [x] rozszerz konfigurację CI o testy jednostkowe
+- [x] rozszerz konfigurację CI o budowanie aplikacji
+- [x] rozszerz konfigurację CI o testy e2e, z pomocą komendy `npm run ci:e2e`
 
 ## Zadanie 5 - Konfiguracja deploymentu
-- [ ] w folderze `.github/workflows` stwórz plik `deploy.yml`
-- [ ] w pliku `package.json` zmień linijkę `8`, tj. wyedytuj `"build:prod": "ng build --prod --base-href https://loginGithub.github.io/nazwaRepozytorium/",` tak aby link uwzględniał Twoją nazwę repozytorium () oraz Twój login github
-- [ ] w pliku `deploy.yml` wpisz następujące linie:
+- [x] w folderze `.github/workflows` stwórz plik `deploy.yml`
+- [x] w pliku `package.json` zmień linijkę `8`, tj. wyedytuj `"build:prod": "ng build --prod --base-href https://loginGithub.github.io/nazwaRepozytorium/",` tak aby link uwzględniał Twoją nazwę repozytorium () oraz Twój login github
+- [x] w pliku `deploy.yml` wpisz następujące linie:
 ~~~
 name: Build and Deploy
 

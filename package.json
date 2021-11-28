@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod --base-href https://bamanczak.github.io/pesel/",
+    "build:prod": "ng build --prod --base-href https://bamanczak.github.io/automate-me-please/",
     "test": "ng test",
     "lint": "ng lint",
     "ci:start-server": "angular-http-server --path ./dist/pesel -p 4200",
