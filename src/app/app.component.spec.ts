@@ -13,16 +13,16 @@ describe('AppComponent', () => {
     component.inputNumber = '19321212346';
     component.onSubmit();
     expect(component.isValid).toBe(true);
-    expect(component.day).toBe(1);
-    expect(component.year).toBe(2020);
-    expect(component.month).toBe(2);
+    expect(component.day).toBe(12);
+    expect(component.year).toBe(2019);
+    expect(component.month).toBe(12);
   });
 
   it('should handle submit correctly with invalid PESEL', () => {
     component.inputNumber = '19321212345';
     component.onSubmit();
     expect(component.day).toBe(undefined);
-    expect(component.isValid).toBe(true);
+    expect(component.isValid).toBe(false);
   });
 
   it('should accept valid PESEL numbers', () => {
@@ -57,7 +57,6 @@ describe('AppComponent', () => {
   it('should accept valid dates', () => {
     expect(component.verifyDate(2019, 2, 28)).toBe(true);
     expect(component.verifyDate(2020, 2, 29)).toBe(true);
-    expect(component.verifyDate(2020, 2, 30)).toBe(true);
     expect(component.verifyDate(2020, 1, 1)).toBe(true);
     expect(component.verifyDate(2020, 12, 31)).toBe(true);
   });
@@ -65,7 +64,7 @@ describe('AppComponent', () => {
   it('should reject invalid dates', () => {
     expect(component.verifyDate(2019, 1, 32)).toBe(false);
     expect(component.verifyDate(2019, 2, 29)).toBe(false);
-    expect(component.verifyDate(2020, 2, 29)).toBe(false);
+    expect(component.verifyDate(2020, 2, 31)).toBe(false);
     expect(component.verifyDate(2020, 2, 30)).toBe(false);
     expect(component.verifyDate(2019, 3, 32)).toBe(false);
     expect(component.verifyDate(2019, 4, 31)).toBe(false);
@@ -81,7 +80,7 @@ describe('AppComponent', () => {
 
   it('should identify birth in XIXth century correctly', () => {
       const pesel19Century: Array<number> = [1, 9, 9, 2, 1, 2, 1, 2, 3, 4, 5];
-      expect(component.getYear(pesel19Century)).toEqual(1919);
+      expect(component.getYear(pesel19Century)).toEqual(1819);
   });
 
   it('should identify birth in XXth century correctly', () => {

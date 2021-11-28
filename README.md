@@ -31,29 +31,29 @@ Uruchom `npm run e2e` aby wykonać testy end to end z wykorzystaniem framework'u
 Kod testów e2e znajduje się w `/tests/pesel.spec.ts`
 
 ## Zadanie 0 - instalacja potrzebnego oprogramowania
-- [ ] Zainstaluj [GitHub Desktop](https://desktop.github.com/)
-- [ ] Zainstaluj [Visual Studio Code](https://code.visualstudio.com/)
-- [ ] Zainstaluj [NodeJS](https://nodejs.org/en/)
+- [x] Zainstaluj [GitHub Desktop](https://desktop.github.com/)
+- [x] Zainstaluj [Visual Studio Code](https://code.visualstudio.com/)
+- [x] Zainstaluj [NodeJS](https://nodejs.org/en/)
 
 ## Zadanie 1 - setup
-- [ ] Stwórz forka repozytorium. [Poradnik znajdziesz tu](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-- [ ] Sklonuj sforkowane repozytorium (pracujemy na swoich repozytoriach)
-- [ ] Uruchom aplikację lokalnie, zgodnie z instrukcjami w tym pliku, w sekcji `Lokalny serwer developerski`
-- [ ] Dla ułatwienia pracy proponuję pracować jedynie na branchu `main`, dodatkowe branche dodamy później. Jeśli znasz dobrze GIT, to oczywiście możesz pracować na dowolnym innym branchu (tak jak to wynika z dobrych praktyk git workflow)
+- [x] Stwórz forka repozytorium. [Poradnik znajdziesz tu](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+- [x] Sklonuj sforkowane repozytorium (pracujemy na swoich repozytoriach)
+- [x] Uruchom aplikację lokalnie, zgodnie z instrukcjami w tym pliku, w sekcji `Lokalny serwer developerski`
+- [x] Dla ułatwienia pracy proponuję pracować jedynie na branchu `main`, dodatkowe branche dodamy później. Jeśli znasz dobrze GIT, to oczywiście możesz pracować na dowolnym innym branchu (tak jak to wynika z dobrych praktyk git workflow)
 
 ## Zadanie 2 - naprawa testów
-- [ ] Uruchom linter
-- [ ] Napraw wszystkie błędy lintera (plik `/src/app/app.component.ts` )
-- [ ] Uruchom testy jednostkowe
-- [ ] Napraw testy jednostkowe
-- [ ] Uruchom testy End-to-End
-- [ ] Napraw test End-to-End
-- [ ] Popraw testy `should accept valid PESEL` oraz `should reject invalid PESEL` aby testowały to, co powinny (prawidłowy i nieprawidłowy pesel oraz wyświetlane dane)
+- [x] Uruchom linter
+- [x] Napraw wszystkie błędy lintera (plik `/src/app/app.component.ts` )
+- [x] Uruchom testy jednostkowe
+- [x] Napraw testy jednostkowe
+- [x] Uruchom testy End-to-End
+- [x] Napraw test End-to-End
+- [x] Popraw testy `should accept valid PESEL` oraz `should reject invalid PESEL` aby testowały to, co powinny (prawidłowy i nieprawidłowy pesel oraz wyświetlane dane)
 
 ## Zadanie 3 - pokrycie unit testów
-- [ ] Uruchom testy jednostkowe z flagą `--code-coverage`, tj. wykonaj `npm test -- --code-coverage` 
-- [ ] Zweryfikuj raport html pokrycia kodu w pliku .coverage\pesel\index.html
-- [ ] Masz pomysł jak rozszerzyć pokrycie testów?
+- [x] Uruchom testy jednostkowe z flagą `--code-coverage`, tj. wykonaj `npm test -- --code-coverage` 
+- [x] Zweryfikuj raport html pokrycia kodu w pliku .coverage\pesel\index.html
+- [x] Masz pomysł jak rozszerzyć pokrycie testów?
 
 ## Zadanie 4 - Konfiguracja pipeline'u CI z wykorzystaniem GitHub Actions
 - [ ] W folderze `.github/workflows`, stwórz plik `main.yml`. Ew. wejdź w link `<adres-twojego-repo-na-github>/actions/new` i kliknij `set up a workflow yourself` aby otworzyć edytor online
@@ -97,16 +97,16 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 ~~~
-- [ ] Zrób `git commit` oraz `git push` - sprawdź czy Github Actions uruchomił Build
-- [ ] rozszerz konfigurację CI o linter
-- [ ] rozszerz konfigurację CI o testy jednostkowe
-- [ ] rozszerz konfigurację CI o budowanie aplikacji
-- [ ] rozszerz konfigurację CI o testy e2e, z pomocą komendy `npm run ci:e2e`
+- [x] Zrób `git commit` oraz `git push` - sprawdź czy Github Actions uruchomił Build
+- [x] rozszerz konfigurację CI o linter
+- [x] rozszerz konfigurację CI o testy jednostkowe
+- [x] rozszerz konfigurację CI o budowanie aplikacji
+- [x] rozszerz konfigurację CI o testy e2e, z pomocą komendy `npm run ci:e2e`
 
 ## Zadanie 5 - Konfiguracja deploymentu
-- [ ] w folderze `.github/workflows` stwórz plik `deploy.yml`
-- [ ] w pliku `package.json` zmień linijkę `8`, tj. wyedytuj `"build:prod": "ng build --prod --base-href https://loginGithub.github.io/nazwaRepozytorium/",` tak aby link uwzględniał Twoją nazwę repozytorium () oraz Twój login github
-- [ ] w pliku `deploy.yml` wpisz następujące linie:
+- [x] w folderze `.github/workflows` stwórz plik `deploy.yml`
+- [x] w pliku `package.json` zmień linijkę `8`, tj. wyedytuj `"build:prod": "ng build --prod --base-href https://loginGithub.github.io/nazwaRepozytorium/",` tak aby link uwzględniał Twoją nazwę repozytorium () oraz Twój login github
+- [x] w pliku `deploy.yml` wpisz następujące linie:
 ~~~
 name: Build and Deploy
 
@@ -143,9 +143,9 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist/pesel # The folder the action should deploy.
 ~~~
-- [ ] `git commit` oraz `git push` - sprawdź czy GitHub Actions uruchomił Build
-- [ ] Wejdź w ustawienia swojego repozytorium, włącz GitHub Pages (wybierz branch gh-pages)
-- [ ] Otwórz link, taki jak wygenerowałeś wcześniej (krok 2 w tym zadaniu), aby zobaczyć , jak wygląda strona na GitHub Pages
+- [x] `git commit` oraz `git push` - sprawdź czy GitHub Actions uruchomił Build
+- [x] Wejdź w ustawienia swojego repozytorium, włącz GitHub Pages (wybierz branch gh-pages)
+- [x] Otwórz link, taki jak wygenerowałeś wcześniej (krok 2 w tym zadaniu), aby zobaczyć , jak wygląda strona na GitHub Pages
  ## Zadanie 6 - Sprawdzamy czy całość działa
 - [ ] W swoim repozytorium stwórz dodatkowy branch `valid`
 - [ ] Wprowadź nieistotną zmianę na branchu `valid`

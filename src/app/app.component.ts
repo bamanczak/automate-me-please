@@ -53,7 +53,7 @@ export class AppComponent {
 
 
   onSubmit() {
-    this.isInitiated=true;
+    this.isInitiated = true;
     const pesel = this.inputNumber;
     this.isValid = this.isValidPesel(pesel);
     if (this.isValid) {
@@ -94,7 +94,7 @@ export class AppComponent {
 
   getDate(pesel: Array<number>) {
     this.year = this.getYear(pesel);
-      this.month = this.getMonth(pesel);
+    this.month = this.getMonth(pesel);
     this.day = this.getDay(pesel);
   }
 
@@ -114,7 +114,7 @@ export class AppComponent {
   }
 
   getYear(pesel: Array<number>) {
-    let year = 1900+pesel[0] * 10 + pesel[1];
+    let year = 1900 + pesel[0] * 10 + pesel[1];
 
     if ( pesel[2] >= 8 ) {
       // Dates in the XIX century
