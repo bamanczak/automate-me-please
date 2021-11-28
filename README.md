@@ -48,7 +48,7 @@ Kod testów e2e znajduje się w `/tests/pesel.spec.ts`
 - [x] Napraw testy jednostkowe
 - [x] Uruchom testy End-to-End
 - [x] Napraw test End-to-End
-- [ ] Popraw testy `should accept valid PESEL` oraz `should reject invalid PESEL` aby testowały to, co powinny (prawidłowy i nieprawidłowy pesel oraz wyświetlane dane)
+- [x] Popraw testy `should accept valid PESEL` oraz `should reject invalid PESEL` aby testowały to, co powinny (prawidłowy i nieprawidłowy pesel oraz wyświetlane dane)
 
 ## Zadanie 3 - pokrycie unit testów
 - [ ] Uruchom testy jednostkowe z flagą `--code-coverage`, tj. wykonaj `npm test -- --code-coverage` 
