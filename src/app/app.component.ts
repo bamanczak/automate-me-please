@@ -63,7 +63,7 @@ export class AppComponent {
   }
 
   isValidPesel(pesel) {
-    if (typeof pesel!=='string') {
+    if (typeof pesel !== 'string') {
       return false;
     } else if ( pesel.length !== 11) {
       return false;
