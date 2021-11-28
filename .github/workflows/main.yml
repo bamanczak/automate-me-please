@@ -36,3 +36,9 @@ jobs:
 
       - name: Unit tests
         run: npm test -- --no-watch --no-progress --browsers=ChromeHeadless
+
+      - name: Build app
+        run: npm run build
+
+      - name: e2e tests
+        run: npm run ci:e2e
