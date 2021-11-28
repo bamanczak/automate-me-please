@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - solution
+      - main
 
 jobs:
   # This workflow contains a single job called "build"

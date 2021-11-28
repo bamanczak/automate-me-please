@@ -143,9 +143,9 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist/pesel # The folder the action should deploy.
 ~~~
-- [ ] `git commit` oraz `git push` - sprawdź czy GitHub Actions uruchomił Build
-- [ ] Wejdź w ustawienia swojego repozytorium, włącz GitHub Pages (wybierz branch gh-pages)
-- [ ] Otwórz link, taki jak wygenerowałeś wcześniej (krok 2 w tym zadaniu), aby zobaczyć , jak wygląda strona na GitHub Pages
+- [x] `git commit` oraz `git push` - sprawdź czy GitHub Actions uruchomił Build
+- [x] Wejdź w ustawienia swojego repozytorium, włącz GitHub Pages (wybierz branch gh-pages)
+- [x] Otwórz link, taki jak wygenerowałeś wcześniej (krok 2 w tym zadaniu), aby zobaczyć , jak wygląda strona na GitHub Pages
  ## Zadanie 6 - Sprawdzamy czy całość działa
 - [ ] W swoim repozytorium stwórz dodatkowy branch `valid`
 - [ ] Wprowadź nieistotną zmianę na branchu `valid`
