@@ -31,19 +31,19 @@ Uruchom `npm run e2e` aby wykonać testy end to end z wykorzystaniem framework'u
 Kod testów e2e znajduje się w `/tests/pesel.spec.ts`
 
 ## Zadanie 0 - instalacja potrzebnego oprogramowania
-- [ ] Zainstaluj [GitHub Desktop](https://desktop.github.com/)
-- [ ] Zainstaluj [Visual Studio Code](https://code.visualstudio.com/)
-- [ ] Zainstaluj [NodeJS](https://nodejs.org/en/)
+- [x] Zainstaluj [GitHub Desktop](https://desktop.github.com/)
+- [x] Zainstaluj [Visual Studio Code](https://code.visualstudio.com/)
+- [x] Zainstaluj [NodeJS](https://nodejs.org/en/)
 
 ## Zadanie 1 - setup
-- [ ] Stwórz forka repozytorium. [Poradnik znajdziesz tu](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-- [ ] Sklonuj sforkowane repozytorium (pracujemy na swoich repozytoriach)
-- [ ] Uruchom aplikację lokalnie, zgodnie z instrukcjami w tym pliku, w sekcji `Lokalny serwer developerski`
-- [ ] Dla ułatwienia pracy proponuję pracować jedynie na branchu `main`, dodatkowe branche dodamy później. Jeśli znasz dobrze GIT, to oczywiście możesz pracować na dowolnym innym branchu (tak jak to wynika z dobrych praktyk git workflow)
+- [x] Stwórz forka repozytorium. [Poradnik znajdziesz tu](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+- [x] Sklonuj sforkowane repozytorium (pracujemy na swoich repozytoriach)
+- [x] Uruchom aplikację lokalnie, zgodnie z instrukcjami w tym pliku, w sekcji `Lokalny serwer developerski`
+- [x] Dla ułatwienia pracy proponuję pracować jedynie na branchu `main`, dodatkowe branche dodamy później. Jeśli znasz dobrze GIT, to oczywiście możesz pracować na dowolnym innym branchu (tak jak to wynika z dobrych praktyk git workflow)
 
 ## Zadanie 2 - naprawa testów
-- [ ] Uruchom linter
-- [ ] Napraw wszystkie błędy lintera (plik `/src/app/app.component.ts` )
+- [x] Uruchom linter
+- [x] Napraw wszystkie błędy lintera (plik `/src/app/app.component.ts` )
 - [ ] Uruchom testy jednostkowe
 - [ ] Napraw testy jednostkowe
 - [ ] Uruchom testy End-to-End
