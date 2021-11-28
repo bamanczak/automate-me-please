@@ -40,5 +40,8 @@ jobs:
       - name: Build app
         run: npm run build
 
+      - name: install Playwright and ChromeHeadless
+        run: npx playwright install
+
       - name: e2e tests
         run: npm run ci:e2e
