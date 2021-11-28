@@ -44,10 +44,10 @@ Kod testów e2e znajduje się w `/tests/pesel.spec.ts`
 ## Zadanie 2 - naprawa testów
 - [x] Uruchom linter
 - [x] Napraw wszystkie błędy lintera (plik `/src/app/app.component.ts` )
-- [ ] Uruchom testy jednostkowe
-- [ ] Napraw testy jednostkowe
-- [ ] Uruchom testy End-to-End
-- [ ] Napraw test End-to-End
+- [x] Uruchom testy jednostkowe
+- [x] Napraw testy jednostkowe
+- [x] Uruchom testy End-to-End
+- [x] Napraw test End-to-End
 - [ ] Popraw testy `should accept valid PESEL` oraz `should reject invalid PESEL` aby testowały to, co powinny (prawidłowy i nieprawidłowy pesel oraz wyświetlane dane)
 
 ## Zadanie 3 - pokrycie unit testów
